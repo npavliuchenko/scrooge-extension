@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "__MSG_app_name__",
+  "short_name": "Scrooge1",
+  "description": "__MSG_app_description__",
+  "version": "0.1.0",
+
+  "default_locale": "en",
+
+  "icons": {
+    "16": "icons/scrooge-icon-16.png",
+    "32": "icons/scrooge-icon-32.png",
+    "128": "icons/scrooge-icon-128.png"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/scrooge-icon-16.png",
+    "default_title": "__MSG_browser_action__",
+    "default_popup": "popup.html"
+  }
+}
