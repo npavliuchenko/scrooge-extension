@@ -89,6 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
             result.push([
               firstPurchaseOnDate ? dateDay + '.' + dateMonth + '.' + dateYear : '',
               purchaseMatch[2] ? purchaseMatch[2].replace('.', ',') : '', // summ
+              '', // currency
               purchaseMatch[4] ? findInList(SOURCE_BY_CODE, purchaseMatch[4].toLowerCase()) : '', // source
               purchaseMatch[6] ? purchaseMatch[6].toLowerCase() : '', // shop
               purchaseMatch[7] || '', // description
@@ -97,6 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
           } else {
             result.push([
               firstPurchaseOnDate ? dateDay + '.' + dateMonth + '.' + dateYear : '',
+              '', // currency
               '', // summ
               '', // source
               '', // shop
@@ -151,5 +153,15 @@ document.addEventListener('DOMContentLoaded', function() {
     request.action === 'scrooge-getNoteData'
       && convertData(request.source.title, request.source.contents);
   });
+
+  // function copyTextToClipboard(text) {
+  //   var copyFrom = document.createElement("textarea");
+  //   copyFrom.textContent = text;
+  //   var body = document.getElementsByTagName('body')[0];
+  //   body.appendChild(copyFrom);
+  //   copyFrom.select();
+  //   document.execCommand('copy');
+  //   body.removeChild(copyFrom);
+  // }
 
 });

@@ -1,11 +1,13 @@
 const CATEGORY = {
   FOOD: 'продукты',
-  HOME: 'бытовое',
+  HOME: 'дом',
+  MONTHLY: 'платежи',
   LEISURE: 'досуг',
   HOBBY: 'хобби',
+  IMAGE: 'стиль',
+  HEALTH: 'здоровье',
   TRANSPORT: 'транспорт',
-  MONTHLY: 'коммуналка',
-  IMAGE: 'внешний вид',
+  E_SIG: 'э-сигареты',
 }
 
 const MONTH_CONVERTER = {
