@@ -15,7 +15,8 @@
   },
 
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "https://keep.google.com/u/0/*"
   ],
 
   "browser_action": {
