@@ -91,9 +91,9 @@ document.addEventListener('DOMContentLoaded', function() {
               purchaseMatch[2] ? purchaseMatch[2].replace('.', ',') : '', // summ
               '', // currency
               purchaseMatch[4] ? findInList(SOURCE_BY_CODE, purchaseMatch[4].toLowerCase()) : '', // source
-              purchaseMatch[6] ? purchaseMatch[6].toLowerCase() : '', // shop
               purchaseMatch[7] || '', // description
-              predictCategory(purchaseMatch[7], purchaseMatch[6])
+              predictCategory(purchaseMatch[7], purchaseMatch[6]),
+              purchaseMatch[6] ? purchaseMatch[6].toLowerCase() : '', // shop
             ]);
           } else {
             result.push([
@@ -101,9 +101,9 @@ document.addEventListener('DOMContentLoaded', function() {
               '', // currency
               '', // summ
               '', // source
-              '', // shop
               row,
-              predictCategory(row)
+              predictCategory(row),
+              '', // shop
             ]);
           }
 
