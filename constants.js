@@ -1,3 +1,5 @@
+//@TODO: scope this
+
 const CATEGORY = {
   FOOD: 'продукты',
   HOME: 'дом',

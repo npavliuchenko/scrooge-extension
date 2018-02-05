@@ -21,7 +21,14 @@
 
   "browser_action": {
     "default_icon": "icons/scrooge-icon-16.png",
-    "default_title": "__MSG_browser_action__",
-    "default_popup": "popup.html"
+    "default_title": "__MSG_browser_action__"
+  },
+
+  "background": {
+    "persistent": false,
+    "scripts": [
+      "constants.js",
+      "background.js"
+    ]
   }
 }
