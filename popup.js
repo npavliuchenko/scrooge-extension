@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
           }
 
           firstPurchaseOnDate = false;
-          // result[result.length - 1] = result[result.length - 1].join("\t");
+          result[result.length - 1] = result[result.length - 1].join("\t");
         }
       }
     }
